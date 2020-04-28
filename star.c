@@ -21,18 +21,19 @@ int main(void)
 			printf("\n");
 
 		}
-	}
-	for (i = 0; i < 5; i++)
-	{
-		for (j = 0; j < i + 1; j++)
+
+		for (i = 0; i < 5; i++)
 		{
-			printf(" ");
+			for (j = 0; j < i + 1; j++)
+			{
+				printf(" ");
+			}
+			for (j = 7; j > 2 * i; j--)
+			{
+				printf("*");
+			}
+			printf("\n");
 		}
-		for (j = 7; j > 2 * i; j--)
-		{
-			printf("*");
-		}
-		printf("\n");
 	}
 
 	return 0;
