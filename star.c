@@ -3,11 +3,13 @@
 int main(void)
 
 {
-	int i, j;
-	for (i = 0; i < 5; i++)
+	int i = 0;
+	int j;
+	if (i == 0)
 	{
-		if (i == 0)
+		for (i = 0; i < 5; i++)
 		{
+
 			for (j = 0; j < 4 - i; j++)
 			{
 				printf(" ");
@@ -17,6 +19,7 @@ int main(void)
 				printf("*");
 			}
 			printf("\n");
+
 		}
 	}
 	for (i = 0; i < 5; i++)
